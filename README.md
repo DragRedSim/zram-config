@@ -1,6 +1,6 @@
 # zram-config
-[![GitHub](https://img.shields.io/github/license/ecdye/zram-config)](https://github.com/ecdye/zram-config/blob/main/LICENSE.md)
-[![ShellCheck](https://github.com/ecdye/zram-config/workflows/ShellCheck/badge.svg)](https://github.com/ecdye/zram-config/actions?query=workflow%3AShellCheck)
+[![GitHub](https://img.shields.io/github/license/dragredsim/zram-config)](https://github.com/dragredsim/zram-config/blob/main/LICENSE.md)
+[![ShellCheck](https://github.com/dragredsim/zram-config/workflows/ShellCheck/badge.svg)](https://github.com/dragredsim/zram-config/actions?query=workflow%3AShellCheck)
 
 ## Overview
 
@@ -19,6 +19,11 @@ If all you are looking for is a zram-swap utility see [StuartIanNaylor/zram-swap
 Both [StuartIanNaylor/zram-swap-config](https://github.com/StuartIanNaylor/zram-swap-config) and [ecdye/zram-config](https://github.com/ecdye/zram-config) are great examples for distributions to get their zram packages updated.
 
 Also if the OverlayFS guys would actually make some official merge/snapshot tools and not just leave it as just enough for Docker that would be massively useful, and if anyone fancies shouting out that call please do.
+
+### Fork notes
+
+This fork is currently set up to log information when an error is found, specificially when the creation of a filesystem fails on a log or folder drive. 
+The badges on this README.md are edited to point to this fork.
 
 ### COMPATIBILITY WARNING
 
@@ -43,7 +48,7 @@ The Raspberry Pi 4 8GB model currently exhibits issues with zram due to a Linux 
 
 ``` shell
 sudo apt-get install git
-git clone --recurse-submodules https://github.com/ecdye/zram-config
+git clone --recurse-submodules https://github.com/dragredsim/zram-config
 cd zram-config
 sudo ./install.bash
 ```
